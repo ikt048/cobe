@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Publishing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon_new_2.png" />
+
+    <!-- Angular File Paths -->
+    <!-- <script src="js/angular.min.js"></script> -->
+    <script src="js/angularscripts.js"></script>
+
+    <!-- Custom File Sheets and Scripts -->
+    <link rel="stylesheet" href="css/dataTables.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="full-width">
+                        <a href="http://www.ikomettech.com">
+                            <figure class="logo-image">
+                                <img src="img/ikomet_logo.png" class="img-fluid" alt="Ikomet Logo" title="Ikomet logo">
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- <div class="jumbotron full-width" ng-controller="DynamicFormController">
+                        <div class="predefined-templates preview-blk">
+                            <h3 class="mb-3 blk-title">Select a Template</h3>
+                            <div class="col-md-12">
+                                <ul class="list-unstyled temp-modal row">
+                                    <li class="col-md-3 p-0">
+                                        <figure class="modal-img">
+                                            <img src="img/modal1.png" class="img-fluid" alt="Modal 1">
+                                            <div class="temp-prev">
+                                                <ul>
+                                                    <li>
+                                                        <a href="" title="Preview" data-toggle="modal" data-target="#exampleModal">
+                                                            <i class="fa fa-search-plus"></i> Preview</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" title="Use">
+                                                            <i class="fa fa-thumbs-up"></i> Use </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="my-list containerVertical">
+                                    <span class="listlevel1" data-id="arrayid_1" ng-repeat="fkey in firstkey" ng-click="secondval(fkey)">
+                                        {{ fkey }}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="my-list list-unstyled containerVertical">
+                                    <span class="listlevel1" ng-repeat="skey in secondkey" ng-click="thirdval(skey)">{{skey}}</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="my-list list-unstyled containerVertical">
+                                    <span class="listlevel1" ng-repeat="tkey in thirdkey" ng-click="LoadForm(tkey)">{{tkey}}</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <form name="AuthorForm" ng-submit="submitForm()">
+                                    <div class="form-group">
+                                        <label>Prefix</label>
+                                        <input type="text" class="form-control" id="Prefix" data-ng-model="forms.Prefix" placeholder="Prefix">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Suffix</label>
+                                        <input type="text" class="form-control" id="Suffix" data-ng-model="forms.Suffix" placeholder="Suffix">
+                                    </div>
+                                    <button class="btn btn-success mt-3 float-right" ng-model="forms" ng-click="submitForm()">Add Details</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row preview-blk">
+                            <div class="col-md-12">
+                                <h3 class="blk-title mt-4">Preview Sample
+                                    <span>Selected text -
+                                        <span>Author Surname</span>
+                                    </span>
+                                </h3>
+                                <div class="full-width" unselectable="on" ng-style="myStyle" id="LoadPreview">
+                                    <p class="Journal">
+                                        <span class="AuthorSurname">Ali</span>
+                                        <span class="AuthorForename">S</span>,
+                                        <span class="AuthorSurname">Robertson</span>
+                                        <span class="AuthorForename">H</span>,
+                                        <span class="AuthorSurname">Wain</span>
+                                        <span class="AuthorForename">JH</span>,
+                                        <span class="AuthorSurname">Isaacs</span>
+                                        <span class="AuthorForename">JD</span>,
+                                        <span class="AuthorSurname">Malik</span>
+                                        <span class="AuthorForename">G</span>,
+                                        <span class="unstyle">and</span>
+                                        <span class="AuthorSurname">Kirby</span>
+                                        <span class="AuthorForename">JA</span>.
+                                        <span class="Year">2005</span>.
+                                        <span class="Articletitle">A non-glycosaminoglycan-binding variant of CC chemokine ligand 7 (monocyte chemoattractant
+                                            protein-3) antagonizes chemokine-mediated inflammation</span>.
+                                        <span class="Journaltitle" avail_in_db="false">J Immunol</span>
+                                        <span class="Volume">175</span>:
+                                        <span class="FirstPage">1257</span>-
+                                        <span class="LastPage">1266</span>.</p>
+                                    <p>Editable Preview</p>
+                                    <div class="list-unstyled di-block editable-list containerVertical">
+                                        <span ng-bind="forms.Prefix"></span>
+                                        <span ng-bind="forms.Suffix"></span>
+                                        </ul>
+                                        <p>Non Editable Preview</p>
+                                        <p ng-bind="forms.Prefix + ' ' + forms.AuthorSurname + ' '  + forms.AuthorForename + ' ' + forms.Suffix  + ' ' + forms.LastAuthor"></p>
+                                        <pre>{{items | json}}</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="jumbotron full-width" ng-controller="DynamicFormController">
+                        <div id="wizard-container full-width" ng-controller="WizardController as vm">
+                            <div class="full-width mb-4">
+                                <nav class="wizard" id="wizard-step-container">
+                                    <ol class="nav nav-pills nav-justified">
+                                        <li ng-repeat="step in vm.steps" ng-class="{'active':step.step == vm.currentStep}">
+                                            <a ng-click="vm.gotoStep(step.step)" href="">
+                                                <span class="stnmbr">{{ step.step}}</span>
+                                                <span class="stsub">
+                                                    <span class="stname">{{step.name}}</span>
+                                                    <br>
+                                                    <span class="stdesc">{{ step.subdesc }}</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="full-width" id="wizard-content-container">
+                                <ng-include src="vm.getStepTemplate()"></ng-include>
+                            </div>
+
+                            <div id="wizard-navigation-container">
+                                <div class="full-width text-center mt-3 d-block">
+                                    <span class="btn-group">
+                                        <button ng-disabled="vm.currentStep <= 1" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)">
+                                            <i class="fa fa-arrow-left"></i> Previous step</button>
+                                        <button ng-disabled="vm.currentStep >= vm.steps.length" class="btn btn-primary" name="next" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">Next step
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </span>
+                                    <button ng-disabled="vm.currentStep != vm.steps.length" class="btn btn-success" name="next" type="button" ng-click="vm.save()">
+                                        <i class="fa fa-floppy-o"></i> Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+<script src="js/bootstrapscripts.js"></script>
+<script src="js/dataTables.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/script.js"></script>

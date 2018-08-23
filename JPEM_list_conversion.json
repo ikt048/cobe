@@ -1,0 +1,612 @@
+{
+	"Punctuation": [
+		{
+			"RefNo": [
+				{
+					"Prefix": "",
+					"Suffix": ". "
+				}
+			],
+			"Authors": [
+				{
+					"FirstAuthor": [
+						{
+							"Prefix": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"AuthorSurname": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"AuthorForename": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"Suffix": [
+								{
+									"Prefix": "",
+									"Suffix": ". "
+								}
+							],
+							"CollaboratedAuthor": [
+								{
+									"Prefix": "",
+									"Suffix": ", ",
+									"Order": "A"
+								}
+							],
+							"LastAuthor": [
+								{
+									"Prefix": ", ",
+									"Suffix": ". "
+								}
+							]
+						}
+					],
+					"Prefix": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"AuthorSurname": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"AuthorForename": [
+						{
+							"Prefix": "",
+							"Suffix": ", "
+						}
+					],
+					"Suffix": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"CollaboratedAuthor": [
+						{
+							"Prefix": "",
+							"Suffix": ", ",
+							"Order": "A"
+						}
+					],
+					"LastAuthor": [
+						{
+							"Prefix": ", ",
+							"Suffix": ". "
+						}
+					]
+				}
+			],
+			"Journal": [
+				{
+					"Articletitle": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"Journaltitle": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"Year": [
+						{
+							"NxtEle": [
+								"Volume"
+							],
+							"No": [
+								{
+									"Prefix": "",
+									"Suffix": ":"
+								}
+							],
+							"Yes": [
+								{
+									"Prefix": "",
+									"Suffix": ";"
+								}
+							]
+						}
+					],
+					"Volume": [
+						{
+							"NxtEle": [
+								"Issue"
+							],
+							"No": [
+								{
+									"Prefix": ["", ""],
+									"Suffix": ":"
+								}
+							],
+							"Yes": [
+								{
+									"Prefix": ["", ""],
+									"Suffix": "("
+								}
+							]
+						}
+					],
+					"Issue": [
+						{
+							"Prefix": "",
+							"Suffix": "):"
+						}
+					],
+					"FirstPage": [
+						{
+							"NxtEle": [
+								"LastPage"
+							],
+							"No": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"Yes": [
+								{
+									"Prefix": "",
+									"Suffix": "–"
+								}
+							]
+						}
+					],
+					"LastPage": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"DOI": [
+						{
+							"Prefix": "DOI: ",
+							"Suffix": ". "
+						}
+					],
+					"URL": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"Comment": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					]
+				}
+			],
+			"Book": [
+				{
+					"Editors": [
+						{
+							"EditorTitle": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"EditorSurname": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"EditorForename": [
+								{
+									"NxtEle": [
+										"EditorSuffix"
+									],
+									"No": [
+										{
+											"Prefix": "",
+											"Suffix": ", "
+										}
+									],
+									"Yes": [
+										{
+											"Prefix": "",
+											"Suffix": " "
+										}
+									]
+								}
+							],
+							"EditorSuffix": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"LastEditor": [
+								{
+									"Prefix": ", and ",
+									"Suffix": [". ", ". "]
+								}
+							]
+						}
+					],
+					"BookTitle": [
+						{
+							"Prefix": "",
+							"Suffix": ", "
+						}
+					],
+					"Edition": [
+						{
+							"Prefix": "",
+							"Suffix": "ed. ",
+							"Others": ", "
+						}
+					],
+					"LocPub":[
+						{
+							"City": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"State": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"Country": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"Publisher": [
+								{
+									"Prefix": " ",
+									"Suffix": ", "
+								}
+							],
+							"StartPun": "",
+							"EndPun": ", ",
+							"CityPubSep": ", ",
+							"GroupPun": ": "
+						}
+					],
+					"Year": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"Volume": [
+						{
+							"Prefix": ["Vol. ", "Vols. "],
+							"Suffix": ", "
+						}
+					],
+					"FirstPage": [
+						{
+							"NxtEle": [
+								"LastPage"
+							],
+							"No": [
+								{
+									"Prefix": "",
+									"Suffix": ". "
+								}
+							],
+							"Yes": [
+								{
+									"Prefix": "",
+									"Suffix": "–"
+								}
+							]
+						}
+					],
+					"LastPage": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"URL": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"Comment": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					]
+				}
+			],
+			"EditedBook": [
+				{
+					"ChapterTitle": [
+						{
+							"Prefix": "",
+							"Suffix": ". In: "
+						}
+					],
+					"Editors": [
+						{
+							"EditorTitle": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"EditorSurname": [
+								{
+									"Prefix": "",
+									"Suffix": " "
+								}
+							],
+							"EditorForename": [
+								{
+									"NxtEle": [
+										"EditorSuffix"
+									],
+									"No": [
+										{
+											"Prefix": "",
+											"Suffix": ", "
+										}
+									],
+									"Yes": [
+										{
+											"Prefix": "",
+											"Suffix": " "
+										}
+									]
+								}
+							],
+							"EditorSuffix": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"LastEditor": [
+								{
+									"Prefix": ", ",
+									"Suffix": [" editor. ", " editors. "]
+								}
+							]
+						}
+					],
+					"BookTitle": [
+						{
+							"Prefix": "",
+							"Suffix": ". "
+						}
+					],
+					"LocPub":[
+						{
+							"City": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"State": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"Country": [
+								{
+									"Prefix": "",
+									"Suffix": ", "
+								}
+							],
+							"Publisher": [
+								{
+									"Prefix": " ",
+									"Suffix": ", "
+								}
+							],
+							"StartPun": "",
+							"EndPun": ", ",
+							"CityPubSep": ", ",
+							"GroupPun": ": "
+						}
+					],
+					"Year": [
+						{
+							"Prefix": "",
+							"Suffix": ": "
+						}
+					],
+					"FirstPage": [
+						{
+							"NxtEle": [
+								"LastPage"
+							],
+							"No": [
+								{
+									"Prefix": "",
+									"Suffix": ". "
+								}
+							],
+							"Yes": [
+								{
+									"Prefix": "",
+									"Suffix": "–"
+								}
+							]
+						}
+					],
+					"LastPage": [
+						{
+							"Prefix": "",
+							"Suffix": ", "
+						}
+					],					
+					"Edition": [
+						{
+							"Prefix": "",
+							"Suffix": "ed. ",
+							"Others": ". "
+						}
+					],
+					"Volume": [
+						{
+							"Prefix": ["Vol. ", "Vols. "],
+							"Suffix": ", "
+						}
+					],
+					"URL": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					],
+					"Comment": [
+						{
+							"Prefix": "",
+							"Suffix": " "
+						}
+					]
+				}
+			],
+			"EndPunctuation": ".",
+			"annotation manuallist": [
+				{
+					"Prefix": " ",
+					"Suffix": ". "
+				}
+			]
+		}
+	],
+	"ProcessingData": [
+		{
+			"Format": [
+				{
+					"Journal":[
+						{
+						}
+					],
+					"Book":[
+						{
+						}
+					],
+					"EditedBook":[
+						{
+						}
+					]
+				}
+			],
+			"Casing": [
+				{
+					"AuthorSurname": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					],
+					"CollaboratedAuthor": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					],
+					"AuthorForename": [
+						{
+							"WordFirstChar": "U",
+							"OtherChars": "U"
+						}
+					],
+					"EditorSurname": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					],
+					"EditorForename": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					],
+					"Edition": [
+						{
+							"WordFirstChar": "L",
+							"OtherChars": "L"
+						}
+					],
+					"Suffix": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					],
+					"Articletitle": [
+						{
+							"WordFirstChar": "A",
+							"OtherChars": "A"
+						}
+					]
+				}
+			],
+			"AuthorForename": [
+				{
+					"Period": "N",
+					"Spacing": "C"
+				}
+			],
+			"EditorForename": [
+				{
+					"Period": "N",
+					"Spacing": "C"
+				}
+			],
+			"AuthorEtal": [
+				{
+					"RequiredEtal": "R",
+					"NoOfAuthors": "5",
+					"Type": "ET",
+					"Text": " <span class = \"et-al\">et al</span>. "
+				}
+			],
+			"Edition":[
+				{
+					"ContentType": "N",
+					"OrdinalFormat": "N"
+				}
+			],
+			"Pages": "T",
+			"Comments": [
+				{
+					"Punctuation": ", ",
+					"LastPunctuation": ""
+				}
+			]
+		}
+	],
+	"Sorting": [
+		{
+			"SortType": "N",
+			"Particle": "N",
+			"ATPreposition": "N"
+		}
+	]
+}

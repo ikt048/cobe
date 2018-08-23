@@ -1,0 +1,115 @@
+<div class="form-wrap">
+    <!-- <div class="row">
+        <div class="col-md-3">
+            <select ng-options="selected for selected in selectval" ng-model="selectedvalue" ng-change="onCategoryChange(selectedvalue)">
+                <option value="" disabled>Select</option>
+            </select>
+
+            <div class="my-list containerVertical">
+                <span class="listlevel1" ng-class="{active : isSelectedfkey(fkey)}" data-id="arrayid_1" ng-repeat="fkey in firstkey" ng-click="secondval(fkey)">
+                    {{ fkey }}
+                </span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="my-list list-unstyled containerVertical">
+                <span class="listlevel1" ng-class="{active : isSelectedskey(skey)}" ng-repeat="skey in secondkey" ng-click="thirdval(skey)">{{skey}}</span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="my-list list-unstyled containerVertical">
+                <span class="listlevel1" ng-class="{active : isSelectedtkey(tkey)}" ng-repeat="tkey in thirdkey" ng-click="LoadForm(tkey)">{{tkey}}</span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <form name="AuthorForm" ng-submit="submitForm()">
+                    <div class="form-group" ng-repeat="formval in formvalues">
+                        <label>{{formval.formkey}}</label>
+                        <input type="text" class="form-control" id="Prefix" data-ng-model="formval.formvalue" placeholder="{{formval.formkey}}">
+                    </div>
+                    <button ng-if="formvalues" class="btn btn-success mt-3 float-right" ng-model="forms" ng-click="submitForm()">Add Details</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="form-container">
+        <form>
+            <div class="row">
+                <!-- <select ng-options="selected for selected in selectval" ng-model="selectedvalue" ng-change="onCategoryChange(selectedvalue)">
+                            <option value="" disabled>Select</option>
+                        </select> -->
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Select Type</label>
+                        <select ng-options="fkey for fkey in firstkey" class="form-control" ng-model="fkey" ng-init="fkeyinit()" ng-change="secondval(fkey)">
+                            <option value="" disabled>Select</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 mb-3">
+                    <div class="custom-control custom-radio custom-control-inline" ng-repeat="fkey in firstkey">
+                        <input type="radio" id="fKeyRadio1" name="fKeyRadio1" class="custom-control-input">
+                        <label class="custom-control-label" for="fKeyRadio1">{{fkey}}</label>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-head full-width">
+                        <p>{{ fkey }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-field-wrap full-width" ng-repeat="skey in secondkey" >
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="" class="col-form-label">{{ skey }} </label>
+                        <label for="" class="col-form-label"  ng-repeat="tkey in thirdkey">{{ tkey }} </label>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <div class="form-group" ng-repeat="formval in formvalues">
+                            <label for="">{{formval.formkey}}</label>
+                            <input type="text" class="form-control" id="" data-ng-model="formval.formvalue" placeholder="{{formval.formkey}}">
+                        </div> -->
+                        <div class="form-group">
+                            <label for="">Prefix</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter Prefix">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Suffix</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter Suffix">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group form-casings">
+                            <!-- <p class="form-casing-head">Casings</p> -->
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" checked name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">First Letter Caps</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">All Letter Caps</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                <label class="custom-control-label" for="customCheck1">Apply Bold Font</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                <label class="custom-control-label" for="customCheck1">Apply Italic Font</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                <label class="custom-control-label" for="customCheck1">Mark this field as Mandatory</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

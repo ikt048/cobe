@@ -1,0 +1,35 @@
+{
+    "users": [
+    {   
+      "id":"1",
+      "name": "Alfreds Futterkis",
+      "email": "Berlin@gmail.com",
+      "phone": "1478523691"
+    },  
+    {
+      "id":"2",
+      "name": "Blauer See",
+      "email": "Mannheim@gmail.com",
+      "phone": "7896541230"
+    },
+    {
+      "id":"3",
+      "name": "Blondel pèreet",
+      "email": "Strasbourg@gmail.com",
+      "phone": "2589631470"
+    },
+    {
+      "id":"4",
+      "name": "Bottom-Dollar",
+      "email": "Tsawassen@gmail.com",
+      "phone": "3698521470"
+    },
+  
+    {
+      "id":"5",
+      "name": "Comércio Mineiro",
+      "email": "São Paulo@gmail.com",
+      "phone": "1478523690"
+    }
+  ]
+}

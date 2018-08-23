@@ -1,0 +1,1417 @@
+@font-face {
+    src: url(../fonts/fontawesome-webfont.woff2);
+    font-family: 'fa';
+}
+
+body {
+    font-size: 14px;
+}
+
+.full-width {
+    width: 100%;
+    float: left;
+}
+
+.my-list .listlevel1 {
+    padding: 10px;
+    background: #e2e2e2;
+    cursor: move;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.my-list .listlevel1.active {
+    background: #368fe1;
+    color: #fff;
+}
+
+.my-list .listlevel1.gu-transit,
+.my-list .listlevel1:hover {
+    background: #368fe1;
+    color: #fff;
+}
+
+.logo-image {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.text-func {
+    position: absolute;
+    top: -50px;
+    right: 15px;
+}
+
+.text-func li {
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    color: #777;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#LoadPreview {
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 200px;
+    display: block;
+}
+
+/* Drag */
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+}
+
+.gu-hide {
+    display: none !important;
+}
+
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.gu-transit {
+    list-style: none;
+    opacity: .8;
+    background: #368fe1;
+}
+
+.editable-list span {
+    display: inline-block;
+    margin-right: 15px;
+    background: #e2e2e2;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+/* .editable-list li span i{
+    font-size: 8px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background: #c1c1c1;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+} */
+
+.blk-title {
+    display: block;
+    background: #368fe1;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.blk-title span {
+    float: right;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px;
+}
+
+.blk-title span span {
+    text-transform: capitalize;
+    border: 1px solid;
+    padding: 2px 5px;
+    margin-left: 10px;
+    top: -3px;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* Publisher Style */
+
+.ArticleType {
+    font-size: 16pt !important;
+    font-weight: Bold !important;
+}
+
+.ArticleTitleHead {
+    font-size: 16pt !important;
+    font-weight: Bold !important;
+}
+
+.Subtitle {
+    font-size: 14pt !important;
+    font-weight: Bold !important;
+}
+
+.RunningHead {
+    font-size: 12pt !important;
+    color: rgb(178, 161, 199) !important;
+}
+
+.LeftRunningHead {
+    font-size: 12pt !important;
+    color: rgb(178, 161, 199) !important;
+}
+
+.RightRunningHead {
+    font-size: 12pt !important;
+    color: rgb(178, 161, 199) !important;
+}
+
+.AuthorGroup {
+    font-size: 12pt !important;
+}
+
+.Affiliation {
+    font-size: 12pt !important;
+}
+
+.CorrespondingAuthor {
+    font-size: 12pt !important;
+}
+
+.PresentAddress {
+    font-size: 12pt !important;
+}
+
+.AcademicEditor {
+    font-size: 12pt !important;
+}
+
+.AuthorFootnotes {
+    font-size: 12pt !important;
+}
+
+.Keywords {
+    font-size: 12pt !important;
+}
+
+.Subject {
+    font-size: 12pt !important;
+}
+
+.JELCode {
+    font-size: 12pt !important;
+}
+
+.MSCId {
+    font-size: 12pt !important;
+}
+
+.Abbreviation {
+    font-size: 12pt !important;
+}
+
+.ArticleHistory {
+    font-size: 12pt !important;
+}
+
+.Abstract {
+    font-size: 14pt !important;
+}
+
+.GraphicalAbstract {
+    font-size: 12pt !important;
+}
+
+.ORCIDID {
+    font-size: 12pt !important;
+}
+
+.FUNDREF {
+    font-size: 12pt !important;
+}
+
+.Heading1 {
+    font-size: 16pt !important;
+    font-weight: Bold !important;
+}
+
+.Heading2 {
+    font-size: 14pt !important;
+    font-weight: Bold !important;
+}
+
+.Heading3 {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    font-style: italic !important;
+}
+
+.Heading4 {
+    font-size: 12pt !important;
+    font-style: italic !important;
+}
+
+.BodyText {
+    font-size: 12pt !important;
+}
+
+.DisplayEquation {
+    font-size: 12pt !important;
+}
+
+.UnnumberedDisplayEquation {
+    font-size: 12pt !important;
+}
+
+.Extract {
+    font-size: 12pt !important;
+}
+
+.ArabicNumberList {
+    font-size: 12pt !important;
+}
+
+.AlphaList {
+    font-size: 12pt !important;
+}
+
+.BulletList {
+    font-size: 12pt !important;
+}
+
+.UnnumberedList {
+    font-size: 12pt !important;
+}
+
+.RomanNumberList {
+    font-size: 12pt !important;
+}
+
+.Box {
+    font-size: 12pt !important;
+}
+
+.Statement {
+    font-size: 12pt !important;
+}
+
+.Poem {
+    font-size: 12pt !important;
+}
+
+.Quotedspeech {
+    font-size: 12pt !important;
+}
+
+.Speech {
+    font-size: 12pt !important;
+}
+
+.Speaker {
+    font-size: 12pt !important;
+}
+
+.Acknowledgements {
+    font-size: 12pt !important;
+}
+
+.Funding {}
+
+.Glossary {
+    font-size: 16pt !important;
+}
+
+.Nomenclature {
+    font-size: 16pt !important;
+}
+
+.Appendix {
+    font-size: 12pt !important;
+}
+
+.Figure {
+    font-size: 12pt !important;
+}
+
+.Table {
+    font-size: 12pt !important;
+}
+
+.Supplementary-material {
+    font-size: 12pt !important;
+}
+
+.FootnoteasGroup {
+    font-size: 12pt !important;
+}
+
+.EndnotesasGroup {
+    font-size: 12pt !important;
+}
+
+.Scheme {
+    font-size: 12pt !important;
+}
+
+.Journal {
+    font-size: 12pt !important;
+}
+
+.Book {
+    font-size: 12pt !important;
+}
+
+.EditedBook {
+    font-size: 12pt !important;
+}
+
+.Thesis {
+    font-size: 12pt !important;
+}
+
+.Report {
+    font-size: 12pt !important;
+}
+
+.Conference {
+    font-size: 12pt !important;
+}
+
+.Paper {
+    font-size: 12pt !important;
+}
+
+.Proceedings {
+    font-size: 12pt !important;
+}
+
+.Newspaper {
+    font-size: 12pt !important;
+}
+
+.Magazine {
+    font-size: 12pt !important;
+}
+
+.Website {
+    font-size: 12pt !important;
+}
+
+.Other-Ref {
+    font-size: 12pt !important;
+}
+
+.defaultPara {
+    font-family: Times New Roman !important;
+    font-size: 12pt !important;
+    line-height: 22pt !important;
+}
+
+.AdditionalInformationAndDeclarationsTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.FundingTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.FundingText {
+    font-size: 10pt !important;
+}
+
+.GrandDisclosureTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.GrandDisclosureText {
+    font-size: 10pt !important;
+}
+
+.CompetingInterestsTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.CompetingInterestsText {
+    font-size: 10pt !important;
+}
+
+.AuthorContributionsTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.AuthorContributionsText {
+    font-size: 10pt !important;
+}
+
+.FieldStudyPermissionsTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.FieldStudyPermissionsText {
+    font-size: 10pt !important;
+}
+
+.DataDepositionTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.DataDepositionText {
+    font-size: 10pt !important;
+}
+
+.SupplementaryMaterialTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.SupplementaryMaterialText {
+    font-size: 10pt !important;
+}
+
+.AuthorForename {
+    font-size: 12pt !important;
+    color: rgb(255, 0, 255) !important;
+}
+
+.AuthorSurname {
+    font-size: 12pt !important;
+    color: rgb(0, 80, 121) !important;
+}
+
+.Suffix {
+    font-size: 12pt !important;
+    color: rgb(142, 91, 55) !important;
+}
+
+.Prefix {
+    font-size: 12pt !important;
+    color: rgb(89, 97, 42) !important;
+}
+
+.Role {
+    font-size: 12pt !important;
+}
+
+.Degrees {
+    font-size: 12pt !important;
+    color: rgb(148, 139, 84) !important;
+}
+
+.On-behalf-of {
+    font-size: 12pt !important;
+}
+
+.CollaboratedAuthor {
+    font-size: 12pt !important;
+    color: rgb(255, 76, 162) !important;
+}
+
+.Division {
+    font-size: 12pt !important;
+    color: rgb(0, 0, 130) !important;
+}
+
+.Department {
+    font-size: 12pt !important;
+    color: rgb(20, 144, 220) !important;
+}
+
+.Institution {
+    font-size: 12pt !important;
+    color: rgb(177, 81, 15) !important;
+}
+
+.StreetDetails {
+    font-size: 12pt !important;
+    color: rgb(8, 136, 142) !important;
+}
+
+.PostalCode {
+    font-size: 12pt !important;
+    color: rgb(141, 35, 183) !important;
+}
+
+.City {
+    font-size: 12pt !important;
+    color: rgb(217, 70, 113) !important;
+}
+
+.State {
+    font-size: 12pt !important;
+    color: rgb(237, 0, 108) !important;
+}
+
+.Country {
+    font-size: 12pt !important;
+    color: rgb(1, 157, 53) !important;
+}
+
+.CorAuthorText {
+    font-size: 12pt !important;
+}
+
+.Telephone {
+    font-size: 12pt !important;
+}
+
+.Fax {
+    font-size: 12pt !important;
+}
+
+.URL {
+    font-size: 12pt !important;
+    color: rgb(165, 0, 212) !important;
+}
+
+.E-mailId {
+    font-size: 12pt !important;
+}
+
+.KeywordsTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.KeywordText {
+    font-size: 12pt !important;
+    font-weight: none !important;
+}
+
+.SubjectTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.SubjectText {
+    font-size: 12pt !important;
+}
+
+.JELCodeTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.JELCodeText {
+    font-size: 12pt !important;
+}
+
+.MSCIDTitle {
+    font-size: 12pt !important;
+}
+
+.MSCIdText {
+    font-size: 12pt !important;
+    font-weight: none !important;
+}
+
+.AbbreviationTitle {
+    font-size: 12pt !important;
+}
+
+.AbbreviationText {
+    font-size: 12pt !important;
+}
+
+.ReceivedDate {
+    font-size: 12pt !important;
+}
+
+.RevisedDate {
+    font-size: 12pt !important;
+}
+
+.AcceptedDate {
+    font-size: 12pt !important;
+}
+
+.PublishedDate {
+    font-size: 12pt !important;
+}
+
+.AbstractTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.AbstractText {
+    font-size: 12pt !important;
+    font-weight: none !important;
+}
+
+.GraphicalAbstractTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.GraphicalAbstractText {
+    font-size: 12pt !important;
+}
+
+.FigureCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.TableCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.BoxCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.SchemeCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.DisplayedEquationCallout {
+    font-size: 12pt !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.AppendixCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.SupplementaryCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.ReferenceCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.FootnoteCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.EndnoteCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.InlineEquation {
+    font-size: 12pt !important;
+}
+
+.PreformatCODE {
+    font-size: 12pt !important;
+}
+
+.AccessionNumber {
+    font-size: 12pt !important;
+}
+
+.ExtractSource {
+    font-size: 12pt !important;
+}
+
+.BoxNumber {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.BoxTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.BoxSource {
+    font-size: 12pt !important;
+}
+
+.BoxNote {
+    font-size: 12pt !important;
+}
+
+.AcknowledgementsTitle {
+    font-size: 12pt !important;
+}
+
+.AcknowledgementsText {
+    font-size: 12pt !important;
+}
+
+.FundingTitle {
+    font-size: 12pt !important;
+}
+
+.FundingText {
+    font-size: 12pt !important;
+}
+
+.AppendixNumber {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.AppendixTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.AppendixText {
+    font-size: 12pt !important;
+}
+
+.FigureNumber {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+}
+
+.FigureCaption {
+    font-size: 12pt !important;
+}
+
+.FigureSource {
+    font-size: 12pt !important;
+}
+
+.FigureNote {
+    font-size: 12pt !important;
+}
+
+.TableNumber {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+}
+
+.TableTitle {
+    font-size: 12pt !important;
+}
+
+.TableHead {
+    font-size: 12pt !important;
+    color: rgb(210, 24, 24) !important;
+}
+
+.TableBody {
+    font-size: 12pt !important;
+    color: rgb(16, 16, 16) !important;
+}
+
+.TableFootnote {
+    font-size: 09pt !important;
+    font-weight: Normal !important;
+    color: rgb(159, 230, 255) !important;
+}
+
+.TableSource {
+    font-size: 09pt !important;
+    font-weight: Normal !important;
+    color: rgb(159, 230, 255) !important;
+}
+
+.EditorForename {
+    font-size: 12pt !important;
+    color: rgb(153, 0, 255) !important;
+}
+
+.EditorSurname {
+    font-size: 12pt !important;
+    color: rgb(173, 73, 123) !important;
+}
+
+.Year {
+    font-size: 12pt !important;
+    color: rgb(0, 89, 0) !important;
+}
+
+.et-al {
+    font-size: 12pt !important;
+    color: rgb(80, 0, 6) !important;
+}
+
+.Volume {
+    font-size: 12pt !important;
+    color: rgb(0, 187, 219) !important;
+}
+
+.Issue {
+    font-size: 12pt !important;
+    color: rgb(169, 170, 39) !important;
+}
+
+.FirstPage {
+    font-size: 12pt !important;
+    color: rgb(255, 118, 0) !important;
+}
+
+.LastPage {
+    font-size: 12pt !important;
+    color: rgb(187, 91, 0) !important;
+}
+
+.Edition {
+    font-size: 12pt !important;
+    color: rgb(90, 135, 255) !important;
+}
+
+.Publisher {
+    font-size: 12pt !important;
+    color: rgb(171, 65, 26) !important;
+}
+
+.Comment {
+    font-size: 12pt !important;
+    color: rgb(201, 189, 49) !important;
+}
+
+.Articletitle {
+    font-size: 12pt !important;
+    color: rgb(0, 59, 227) !important;
+}
+
+.Journaltitle {
+    font-size: 12pt !important;
+    /* font-style: italic!important; */
+    color: rgb(255, 51, 0) !important;
+}
+
+.DOI {
+    font-size: 12pt !important;
+    color: rgb(0, 216, 0) !important;
+}
+
+.ISSN {
+    font-size: 12pt !important;
+    color: rgb(255, 171, 51) !important;
+}
+
+.PMID {
+    font-size: 12pt !important;
+    color: rgb(130, 74, 102) !important;
+}
+
+.BookTitle {
+    font-size: 12pt !important;
+    color: rgb(99, 0, 204) !important;
+}
+
+.ISBN {
+    font-size: 12pt !important;
+    color: rgb(159, 201, 7) !important;
+}
+
+.ChapterTitle {
+    font-size: 12pt !important;
+    color: rgb(23, 178, 125) !important;
+}
+
+.ThesisTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.ThesisType {
+    font-size: 12pt !important;
+    color: rgb(25, 198, 115) !important;
+}
+
+.ReportTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.ReportNumber {
+    font-size: 12pt !important;
+    color: rgb(201, 189, 49) !important;
+}
+
+.ReportAgencyName {
+    font-size: 12pt !important;
+    color: rgb(35, 172, 221) !important;
+}
+
+.PresentationTitle {
+    font-size: 12pt !important;
+    color: rgb(25, 198, 115) !important;
+}
+
+.ConferenceName {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.PaperTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.ProceedingsArticleTitle {
+    font-size: 12pt !important;
+    color: rgb(25, 198, 115) !important;
+}
+
+.ProceedingsTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.NewspaperArticletitle {
+    font-size: 12pt !important;
+}
+
+.NewspaperTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.MagazineArticleTitle {
+    font-size: 12pt !important;
+    color: rgb(25, 198, 115) !important;
+}
+
+.MagazineTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.WebPageTitle {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.Other-RefTitles {
+    font-size: 12pt !important;
+    color: rgb(255, 102, 0) !important;
+}
+
+.EditorAuthor {
+    font-size: 12pt !important;
+    color: rgb(128, 23, 2) !important;
+}
+
+.FundingTitle {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+}
+
+.FundingText {
+    font-size: 10pt !important;
+}
+
+.GrantSponsorName {
+    font-size: 10pt !important;
+}
+
+.GrantSponsorNumber {
+    font-size: 10pt !important;
+}
+
+.AuthorEditor {
+    font-size: 12pt !important;
+    color: #000 !important;
+}
+
+.CollabEditor {
+    font-size: 12pt !important;
+    color: #000 !important;
+}
+
+.SectionCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.SectionTitleCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.PreformatCallout {
+    font-size: 12pt !important;
+    font-weight: Bold !important;
+    color: rgb(255, 0, 0) !important;
+}
+
+.equationImage {
+    display: none;
+}
+
+/* Navigation Steps */
+
+.wizard li a {
+    background-color: #E4E4E4;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 30px 10px 40px;
+    margin-right: -7px;
+    min-width: 240px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.wizard li a .stnmbr {
+    font-size: 33px;
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.wizard li a .stname {
+    text-transform: uppercase;
+}
+
+.wizard li a .stsub {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.wizard li.active a {
+    background: #4caf50;
+    color: #fff;
+}
+
+.wizard li a::before,
+.wizard li a::after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: transparent;
+    border-left-color: #e4e4e4;
+}
+
+.wizard li.active a::before {
+    border-left-color: #4caf50;
+}
+
+.wizard li a::before {
+    position: absolute;
+    border-width: 30px;
+    margin-top: -13px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -53px;
+    z-index: 3;
+}
+
+.wizard li a::after {
+    border-left-color: #e9ecef;
+    border-width: 36px;
+    margin-top: -48px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -65px;
+    margin: auto;
+    z-index: 2;
+}
+
+.wizard li a.selected {
+    background-color: #FF4F65;
+    color: #fff;
+}
+
+.wizard li a.selected::after {
+    border-left-color: #FF4F65;
+}
+
+.wizard li:last-child a::after,
+.wizard li:last-child a::before {
+    display: none;
+}
+
+/* Template Preview */
+
+.sort-wrap {
+    display: inline-block;
+    color: #fff;
+}
+
+.title-wrap {
+    padding: 15px 10px;
+    background: #2196f3;
+}
+
+.title-head {
+    color: #fff;
+}
+
+.title-head .btn-success {
+    padding: 2px 9px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.sort-wrap .gr-icon {
+    border: 1px solid;
+    color: #fff;
+    width: 25px;
+    margin-right: 5px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sort-wrap .gr-icon.active {
+    color: #ffeb3b;
+}
+
+.sort-wrap .form-control {
+    margin: 0;
+}
+
+.preview-card {
+    background: #fff;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.preview-card .card-body {
+    padding: 0;
+}
+
+.preview-card .card-title {
+    margin-bottom: 0;
+    padding: 15px;
+    font-size: 14px;
+    border-left: 4px solid #ddd;
+    font-weight: 500;
+    transition: .2s all;
+    position: relative;
+    cursor: pointer;
+}
+
+.preview-card .card-title .prev-date {
+    color: #777;
+    font-size: 12px;
+}
+
+.preview-card .card-title .prev-status {
+    font-size: 10px;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    background: #f44336;
+}
+
+.preview-card .card-title .prev-status.active {
+    background: #4caf50;
+}
+
+.preview-card .card-title a {
+    color: #777;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: .2s all;
+    display: inline-block;
+    margin-bottom: 5px;
+    /* min-width: 72px; */
+}
+
+.preview-card .card-title a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.preview-card .card-title .preview-lnk {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    margin: auto;
+    opacity: .5;
+    transition: .2s all;
+    display: block;
+    text-align: center;
+}
+
+.preview-card .card-title:hover {
+    border-left-color: #2196f3;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    transition: .2s all;
+}
+
+.preview-card .card-title:hover a,
+.preview-card .card-title:hover .preview-lnk {
+    color: #2196f3;
+    transition: .2s all;
+    opacity: 1;
+}
+
+/* Datatable */
+
+#TemplateTable_filter,
+.dataTables_length {
+    display: none;
+}
+
+#TemplateTable {
+    background: #fff;
+}
+
+.actions i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.actions i.fa-times {
+    background: #f44336;
+}
+
+.actions i.fa-clone {
+    background: #4caf50;
+}
+
+.actions i.fa-edit {
+    background: #3f51b5;
+}
+
+/* Form Details */
+
+.form-wrap {
+    background: #fff;
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.form-head {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-head p {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 6px 20px;
+    background: #2196f3;
+    color: #fff;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.form-head p::after {
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: 0;
+    border-bottom: 33px solid #2196f3;
+    border-right: 20px solid transparent;
+}
+
+.single-field-wrap{
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-casings{
+    padding: 20px;
+    background: #2780e312;
+    border: 1px solid #2780e32b;
+    margin-top: 15px;
+}
+.form-casings .form-casing-head{
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Draggable List */
+.drag-list{
+    width: 100%;
+    float: left;
+}
+.drag-list span{
+    display: inline-block;
+    padding: 2px 10px;
+    background: #607d8b;
+    color: #fff;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: move;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.drag-list span.gu-transit{
+    background: #4caf50;
+}
+
+/* Popover */
+.popover-content{
+    display: none;
+}
+.popover-body{
+    background: #333;
+    color: #fff;
+}
+.popover .arrow::after,.popover .arrow::before{
+    border-bottom-color:#333;
+    border-top-color: #333;
+}
